@@ -60,7 +60,7 @@ I think I'm off to a good start but there needs to be some changes. I'm starting
 
 
 
-
+# Old / Proposal
 
 Description: This project will predict the next day's trading price of a selected stock(s). This will be done by factoring in multiple factors, such as the stock's historical performance, options data, and data from the rest of the stock market (including the 2008 market crash and 2020).
 **Post Feedback** - I will be using the AAPL (Apple) stock primarily. I will not be using the options market, it'll be a bonus implementation.
