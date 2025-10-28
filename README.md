@@ -9,10 +9,10 @@ Updated for midterm report
 Description: This project will predict the next day's trading price of a selected stock(s). This will be done by factoring in multiple factors, such as the stock's historical performance, and data from the rest of the stock market.
 
 # Preliminary Visualizations of Data:
-Figure_1.png
-Figure_2.png
-Figure_3.png
-Figure_4.png
+[Figure_1.png](https://github.com/hearjest/DS-Project/blob/main/Figure_1.png?raw=true)
+[Figure_2.png](https://github.com/hearjest/DS-Project/blob/main/Figure_2.png?raw=true)
+[Figure_3.png](https://github.com/hearjest/DS-Project/blob/main/Figure_3.png?raw=true)
+[Figure_4.png](https://github.com/hearjest/DS-Project/blob/main/Figure_4.png?raw=true)
 
 
 # Data Processing:
@@ -33,16 +33,16 @@ Random Forest was also chosen because it can handle complex data and I could see
 
 # Preliminary Results
 
-Screenshot 2025-10-27 221149.png
-Screenshot 2025-10-27 221224.png
+[Screenshot 2025-10-27 221149.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221149.png?raw=true)
+[Screenshot 2025-10-27 221224.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221224.png?raw=true)
 I was pretty happy to be able to get 60% with logistic regression. But the recall score is absolutely abysmal and needs to be addressed, and just the entire Same classification as well.
 
 
-Screenshot 2025-10-27 221253.png
-Screenshot 2025-10-27 221317.png
+[Screenshot 2025-10-27 221253.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221253.png?raw=true)
+[Screenshot 2025-10-27 221317.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221317.png?raw=true)
 I was surprised to see a 57% accuracy score from random forest, and we see another abysmal Same classification score. This needs to be addressed.
 
-# Plans for final 
+# Next Steps / Plans for final 
 I think I'm off to a good start but there needs to be some changes. I'm starting to doubt some of the features I'm using such as the averages because of the outliers that I intentionally kept. I will also account for the overall performance of the stock market, and try to include some of the options data to see if it'll help. I also think I need to test with a few other classification models. 
 
 
