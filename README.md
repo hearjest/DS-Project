@@ -9,10 +9,11 @@ Updated for midterm report
 Description: This project will predict the next day's trading price of a selected stock(s). This will be done by factoring in multiple factors, such as the stock's historical performance, and data from the rest of the stock market.
 
 # Preliminary Visualizations of Data:
-[Figure_1.png](https://github.com/hearjest/DS-Project/blob/main/Figure_1.png?raw=true)
-[Figure_2.png](https://github.com/hearjest/DS-Project/blob/main/Figure_2.png?raw=true)
-[Figure_3.png](https://github.com/hearjest/DS-Project/blob/main/Figure_3.png?raw=true)
-[Figure_4.png](https://github.com/hearjest/DS-Project/blob/main/Figure_4.png?raw=true)
+<img width="1000" height="400" alt="Figure_1" src="https://github.com/user-attachments/assets/6632681a-9923-409b-b8cd-c9883abf9bd4" />
+<img width="800" height="400" alt="Figure_2" src="https://github.com/user-attachments/assets/25057d6c-6051-4833-80cc-72151fe09ce5" />
+<img width="1000" height="400" alt="Figure_3" src="https://github.com/user-attachments/assets/706ca83d-af51-4f46-98f6-cd3cd958c588" />
+<img width="800" height="400" alt="Figure_4" src="https://github.com/user-attachments/assets/a04eb957-b9ef-4716-a3d6-c77031dd5cef" />
+
 
 
 # Data Processing:
@@ -33,13 +34,15 @@ Random Forest was also chosen because it can handle complex data and I could see
 
 # Preliminary Results
 
-[Screenshot 2025-10-27 221149.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221149.png?raw=true)
-[Screenshot 2025-10-27 221224.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221224.png?raw=true)
+<img width="308" height="158" alt="Screenshot 2025-10-27 221149" src="https://github.com/user-attachments/assets/18bf2f68-a610-4491-b32e-fb1e9ed23a7b" />
+<img width="486" height="408" alt="Screenshot 2025-10-27 221224" src="https://github.com/user-attachments/assets/48b092b9-2a26-455a-9529-ff7d3c8f4bea" />
+
 I was pretty happy to be able to get 60% with logistic regression. But the recall score is absolutely abysmal and needs to be addressed, and just the entire Same classification as well.
 
 
-[Screenshot 2025-10-27 221253.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221253.png?raw=true)
-[Screenshot 2025-10-27 221317.png](https://github.com/hearjest/DS-Project/blob/main/Screenshot%202025-10-27%20221317.png?raw=true)
+<img width="565" height="318" alt="Screenshot 2025-10-27 221253" src="https://github.com/user-attachments/assets/04a33073-ccb3-4d78-a291-018e1e5b9863" />
+<img width="497" height="412" alt="Screenshot 2025-10-27 221317" src="https://github.com/user-attachments/assets/4a5daba0-aec0-4ed4-a290-a9faa3ccaae9" />
+
 I was surprised to see a 57% accuracy score from random forest, and we see another abysmal Same classification score. This needs to be addressed.
 
 # Next Steps / Plans for final 
