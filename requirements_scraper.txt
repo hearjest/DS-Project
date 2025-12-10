@@ -1,0 +1,10 @@
+# Requirements for Apple News Scraper
+# Install with: pip install -r requirements_scraper.txt
+
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+feedparser>=6.0.10
+pandas>=2.0.0
+newspaper3k>=0.2.8  # Optional but recommended for better article extraction
+lxml>=4.9.0  # Required for newspaper3k
+

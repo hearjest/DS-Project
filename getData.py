@@ -1,16 +1,18 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
+from datetime import datetime
+
 dat = yf.Ticker("AAPL")
-#print(dat.history(period='5d',interval="1d",prepost=False,auto_adjust=True,actions=True))
-#history=dat.history(period='30y',interval="1d",prepost=False,auto_adjust=True,actions=True)
-#file=pd.DataFrame(history)
-options=dat.option_chain(dat.options[0]).calls
-optionsFile=pd.DataFrame(options)
-optionsFile.to_csv("options.csv")
-print(options)
-#file=pd.DataFrame(history)
-#print(file['Datetime'])
-#file.to_csv("test4.csv")
-#plt.plot(file.index,file['Open'])
-#plt.show()
+<<<<<<< HEAD
+ 
+=======
+
+>>>>>>> 5da5bcf (update)
+# Get historical price data
+print("Downloading historical price data...")
+history = dat.history(period='40y', interval="1d", prepost=False, auto_adjust=True, actions=True)
+file = pd.DataFrame(history)
+file.to_csv("test5.csv")
+print(f"Historical data saved to test5.csv ({len(file)} rows)")
+print("\nNote: Options data, NASDAQ, DOW, and S&P 500 data downloads have been removed.")
