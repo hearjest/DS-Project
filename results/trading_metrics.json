@@ -1,0 +1,30 @@
+{
+  "initial_cash": 10000,
+  "buy_hold_return": 312.6309964015224,
+  "models": {
+    "logistic_regression": {
+      "final_value": 27809.4724434262,
+      "total_return_pct": 178.094724434262,
+      "excess_return_pct": -134.5362719672604,
+      "num_trades": 282
+    },
+    "random_forest": {
+      "final_value": 16302.685777511324,
+      "total_return_pct": 63.02685777511324,
+      "excess_return_pct": -249.60413862640917,
+      "num_trades": 581
+    },
+    "xgboost": {
+      "final_value": 33895.58846823248,
+      "total_return_pct": 238.95588468232484,
+      "excess_return_pct": -73.67511171919756,
+      "num_trades": 532
+    },
+    "pytorch": {
+      "final_value": 12988.705152204855,
+      "total_return_pct": 29.88705152204855,
+      "excess_return_pct": -282.7439448794739,
+      "num_trades": 244
+    }
+  }
+}

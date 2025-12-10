@@ -32,13 +32,19 @@ if errorlevel 1 (
 )
 
 echo.
+echo Step 4: Executing Jupyter notebook...
+python -m jupyter nbconvert --to notebook --execute --inplace s3.4testsentiment2.ipynb
+if errorlevel 1 (
+    echo ERROR: Failed to execute notebook
+    exit /b 1
+)
+
+echo.
 echo ========================================
 echo Pipeline completed successfully!
 echo ========================================
 echo.
-echo Next steps:
-echo   1. Open s3.4testsentiment2.ipynb in Jupyter
-echo   2. Run all cells to train models and generate results
+echo All steps completed including notebook execution.
 echo.
 
 pause

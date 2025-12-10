@@ -1,34 +1,81 @@
 {
-  "model": "rf",
   "train_fraction": 0.8,
-  "num_features": 11,
-  "num_train_rows": 6011,
-  "num_test_rows": 1503,
-  "accuracy_test": 0.5761809713905522,
-  "classes": [
-    "Down",
-    "Same",
-    "Up"
-  ],
-  "per_class_metrics": {
-    "Down": {
-      "precision": 0.5764705882352941,
-      "recall": 0.6103202846975089,
-      "f1": 0.5929127052722558,
-      "support": 562
+  "num_features": 50,
+  "num_train_rows": 6000,
+  "num_test_rows": 1500,
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.5346666666666666,
+      "macro_f1": 0.5346368834272059,
+      "per_class_metrics": {
+        "Down": {
+          "precision": 0.6349453978159126,
+          "recall": 0.4672789896670494,
+          "f1": 0.5383597883597884,
+          "support": 871
+        },
+        "Up": {
+          "precision": 0.459837019790454,
+          "recall": 0.6279809220985691,
+          "f1": 0.5309139784946236,
+          "support": 629
+        }
+      }
     },
-    "Same": {
-      "precision": 0.358974358974359,
-      "recall": 0.15671641791044777,
-      "f1": 0.21818181818181817,
-      "support": 268
+    "random_forest": {
+      "accuracy": 0.48333333333333334,
+      "macro_f1": 0.48332208123643583,
+      "per_class_metrics": {
+        "Down": {
+          "precision": 0.5754716981132075,
+          "recall": 0.42020665901262916,
+          "f1": 0.48573324485733244,
+          "support": 871
+        },
+        "Up": {
+          "precision": 0.41550925925925924,
+          "recall": 0.5707472178060413,
+          "f1": 0.48091091761553917,
+          "support": 629
+        }
+      }
     },
-    "Up": {
-      "precision": 0.6080910240202275,
-      "recall": 0.7147102526002972,
-      "f1": 0.657103825136612,
-      "support": 673
+    "xgboost": {
+      "accuracy": 0.5126666666666667,
+      "macro_f1": 0.5122276715710806,
+      "per_class_metrics": {
+        "Down": {
+          "precision": 0.6198630136986302,
+          "recall": 0.41561423650975887,
+          "f1": 0.49759450171821307,
+          "support": 871
+        },
+        "Up": {
+          "precision": 0.4443231441048035,
+          "recall": 0.6470588235294118,
+          "f1": 0.5268608414239482,
+          "support": 629
+        }
+      }
+    },
+    "pytorch": {
+      "accuracy": 0.46266666666666667,
+      "macro_f1": 0.45965417867435154,
+      "per_class_metrics": {
+        "Down": {
+          "precision": 0.562862669245648,
+          "recall": 0.3340987370838117,
+          "f1": 0.41930835734870314,
+          "support": 871
+        },
+        "Up": {
+          "precision": 0.40996948118006105,
+          "recall": 0.6406995230524642,
+          "f1": 0.5,
+          "support": 629
+        }
+      }
     }
   },
-  "datetime": "2025-10-28T01:03:58.479557Z"
+  "datetime": "2025-12-10T03:03:38.729731Z"
 }

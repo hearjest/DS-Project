@@ -13,15 +13,16 @@ RESULTS_DIR := results
 RAW_DATA := test4.csv
 PROCESSED_DATA := processedtest4_enhanced.csv
 REQUIREMENTS := requirements.txt
+NOTEBOOK := s3.4testsentiment2.ipynb
 
 help:
 	@echo "Available targets:"
 	@echo "  make install    - Install all Python dependencies"
 	@echo "  make data       - Download stock data (AAPL)"
 	@echo "  make features   - Extract features from raw data"
-	@echo "  make train      - Train all models"
+	@echo "  make train      - Train all models (executes Jupyter notebook)"
 	@echo "  make test       - Run test suite"
-	@echo "  make run        - Run complete pipeline (data + features + train)"
+	@echo "  make run        - Run complete pipeline (data + features + train + notebook)"
 	@echo "  make clean      - Clean generated files"
 	@echo "  make help       - Show this help message"
 
@@ -46,25 +47,26 @@ features:
 	@echo "✓ Features extracted"
 
 train:
-	@echo "Training models..."
+	@echo "Training models via Jupyter notebook..."
 	@if [ ! -f $(PROCESSED_DATA) ]; then \
 		echo "Error: $(PROCESSED_DATA) not found. Run 'make features' first."; \
 		exit 1; \
 	fi
-	@echo "Note: Full training is done via Jupyter notebook (s3.4testsentiment2.ipynb)"
-	@echo "For command-line training, use: python model-train.py --model logistic"
-	@echo "✓ Training instructions displayed"
+	@if [ ! -f $(NOTEBOOK) ]; then \
+		echo "Error: $(NOTEBOOK) not found."; \
+		exit 1; \
+	fi
+	@echo "Executing Jupyter notebook: $(NOTEBOOK)"
+	$(PYTHON) -m jupyter nbconvert --to notebook --execute --inplace $(NOTEBOOK)
+	@echo "✓ Notebook executed successfully"
 
 test:
 	@echo "Running tests..."
 	$(PYTHON) test_project.py
 	@echo "✓ Tests completed"
 
-run: install data features
-	@echo "✓ Complete pipeline executed"
-	@echo "Next steps:"
-	@echo "  1. Open s3.4testsentiment2.ipynb in Jupyter"
-	@echo "  2. Run all cells to train models and generate results"
+run: install data features train
+	@echo "✓ Complete pipeline executed (including notebook)"
 
 clean:
 	@echo "Cleaning generated files..."
