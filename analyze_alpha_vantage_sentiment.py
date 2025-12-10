@@ -217,7 +217,7 @@ def get_word_bank_sentiment(text, positive_words, negative_words):
 
 def parse_alpha_vantage_time(time_str):
     """Parse Alpha Vantage time format: YYYYMMDDTHHMMSS"""
-    try:
+    try: 
         if pd.isna(time_str):
             return None
         time_str = str(time_str).strip()

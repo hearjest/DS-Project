@@ -1,7 +1,7 @@
 .PHONY: install run data features train test clean help
 
 # Default Python interpreter
-PYTHON := python3
+PYTHON := python3 
 
 # Directories
 DATA_DIR := .

@@ -1,6 +1,5 @@
 """
 Naive Bayes + TF-IDF Sentiment Analysis for Apple Articles (BINARY CLASSIFICATION)
-Based on methodology from EL_25_2_09.pdf paper
 
 This script:
 1. Reads articles from apple_articles_compiled2.csv (READ-ONLY)
@@ -115,7 +114,7 @@ def create_training_labels(df_articles, df_vader):
             return None
         if vader_score > 0.05:
             return 'positive'
-        else:
+        else: 
             return 'negative'  # Combines neutral and negative
     
     df_merged['label'] = df_merged['VADER_Compound_Mean'].apply(get_label)

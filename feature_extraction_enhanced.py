@@ -234,7 +234,7 @@ def add_technical_indicators(df):
     # MACD (Moving Average Convergence Divergence)
     exp1 = df['Adj Close'].ewm(span=12, adjust=False).mean()
     exp2 = df['Adj Close'].ewm(span=26, adjust=False).mean()
-    df['macd'] = exp1 - exp2
+    df['macd'] = exp1 - exp2 
     df['macd_signal'] = df['macd'].ewm(span=9, adjust=False).mean()
     df['macd_hist'] = df['macd'] - df['macd_signal']
     

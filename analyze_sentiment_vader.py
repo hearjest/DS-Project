@@ -6,7 +6,7 @@ import os
 from collections import defaultdict
 
 # VADER Sentiment Analysis
-try:
+try: 
     from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
     VADER_AVAILABLE = True
 except ImportError:

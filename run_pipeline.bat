@@ -1,6 +1,6 @@
 @echo off
 REM Windows batch script to run the project pipeline
-REM Alternative to Makefile for Windows users
+REM Alternative to Makefile for Windows users 
 
 echo ========================================
 echo Stock Price Prediction Project

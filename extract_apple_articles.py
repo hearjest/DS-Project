@@ -11,7 +11,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 nasdaq_file = os.path.join(SCRIPT_DIR, "STUFFALOTSOFSTUFF", "nasdaq_exteral_data.csv")
 all_external_file = os.path.join(SCRIPT_DIR, "STUFFALOTSOFSTUFF", "All_external.csv")
 output_file = os.path.join(SCRIPT_DIR, "apple_articles_compiled2.csv")
-
+ 
 # Word bank for Apple-related keywords
 APPLE_KEYWORDS = [
     # Stock symbols and tickers
