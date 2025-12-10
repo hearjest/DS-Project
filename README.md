@@ -14,7 +14,7 @@ Description: This project will predict the next day's trading price of a selecte
 <img width="1000" height="400" alt="Figure_3" src="https://github.com/user-attachments/assets/706ca83d-af51-4f46-98f6-cd3cd958c588" />
 <img width="800" height="400" alt="Figure_4" src="https://github.com/user-attachments/assets/a04eb957-b9ef-4716-a3d6-c77031dd5cef" />
 
-
+https://www.engineeringletters.com/issues_v25/issue_2/EL_25_2_09.pdf
 
 # Data Processing:
 Notice the volatility during the Dot Com Bubble, 2008 Financial Crisis, Covid, and Trump annoucing tariff pauses in the 3rd image. I've decided to keep these in because I wanted to account for any pattern to all of these events occuring, causing high volatility, even if I cannot predict them. I don't think it would reflect reality, which is what we want to reflect, if we continually assume controlled and stable growth/stagnation.
