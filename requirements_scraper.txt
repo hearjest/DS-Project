@@ -7,4 +7,3 @@ feedparser>=6.0.10
 pandas>=2.0.0
 newspaper3k>=0.2.8  # Optional but recommended for better article extraction
 lxml>=4.9.0  # Required for newspaper3k
-

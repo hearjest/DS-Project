@@ -64,4 +64,3 @@ if os.path.exists(csv_path):
     if len(aapl_articles) > 0:
         print(f"  AAPL sentiment distribution:")
         print(aapl_articles['aapl_label'].value_counts())
-
