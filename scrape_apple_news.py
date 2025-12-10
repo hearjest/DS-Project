@@ -34,7 +34,7 @@ DELAY_BETWEEN_REQUESTS = 1  # Seconds to wait between requests (be respectful)
 REQUEST_TIMEOUT = 10  # Seconds before timing out
 
 # NewsAPI configuration (optional - get free API key from https://newsapi.org/)
-NEWSAPI_KEY = ""
+NEWSAPI_KEY = "14f893ad4b1f4f4c868f9e6a044a4c99"
 USE_NEWSAPI = True  # Set to True if you have NewsAPI key
 
 

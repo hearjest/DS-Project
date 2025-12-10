@@ -35,7 +35,7 @@ else:
                     # Try to find JSON data in outputs
                     if 'unique_articles' in text or 'all_articles_data' in text:
                         print(f"Found potential article data in cell output")
-         
+        
         if articles_found:
             print(f"Found {len(articles_found)} articles in notebook output")
         else:

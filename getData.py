@@ -4,7 +4,7 @@ import yfinance as yf
 from datetime import datetime
 
 dat = yf.Ticker("AAPL")
- 
+
 # Get historical price data
 print("Downloading historical price data...")
 history = dat.history(period='40y', interval="1d", prepost=False, auto_adjust=True, actions=True)
