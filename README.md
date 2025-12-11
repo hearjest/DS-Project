@@ -34,42 +34,9 @@ I ended up changing the up, same, and down classification to just up and down. I
 So I just moved onto the trading aspect. A bit unsurprisingly, it turned out just buying AAPL stock and then holding it for several years ended up with a return of 300%, while my logistic regression model only netted a 270% return over the same period. 
 
   
-In short, I learned a lot about the data science cycle, but it had to be through an impossible task because I had no idea what I was getting myself into.
+In short, I learned a lot about the data science cycle, but it had to be through an impossible task because I had no idea what I was getting myself into.   
 
 
-  
-Updated for the final report.
-
-# Data Collection
-I used the yfinance API to grab stock data (and options) about AAPL from the very beginning. I've also grabbed data from the NASDAQ, DOW, and S&P500. These and the options data were not used in the end. Explaination following after the model training section.
-In addition I used scrapers to scrape headlines involving Apple stock using NEWSAPI from Google News. In addition, I've used multiple Kaggle datasets also containing news about Apple. The biggest dataset by far was the FNSPID dataset (https://github.com/Zdong104/FNSPID_Financial_News_Dataset). It contains roughly 33GB of scraped news articles from 1999 to 2024. This was later combined with articles from Alpha Vantage, the scraped Apple articles. 
-
-# Data Cleaning
-The only real cleaning I had to do was filter through the 33GB dataset to filter for articles that involve Apple stock, AAPL, etc.. I was then able to obtain roughly 6-7 GB of articles. 
-
-
-# Feature Extraction
-Probably the worst part. I used many financial metrics such as volume, rolling averages
-
-# Data Visualization
-
-# Model Training
-
-# Apple Stock Price Prediction Project
-
-## Project Overview
-
-This project implements a comprehensive machine learning pipeline to predict next-day directional movements (Up/Down) for Apple Inc. (AAPL) stock. The project integrates historical stock price data, news sentiment analysis, technical indicators, and multiple classification models to demonstrate the full data science lifecycle.
-
-The goal is to practice the full data science lifecycle on a topic of your choice, and this project includes all required components:
-
-- **Data Collection**
-- **Data Cleaning**
-- **Feature Extraction**
-- **Data Visualization**
-- **Model Training**
-
----
 
 ## 1. Data Collection
 
