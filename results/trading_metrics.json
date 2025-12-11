@@ -15,16 +15,16 @@
       "num_trades": 581
     },
     "xgboost": {
-      "final_value": 33895.58846823248,
-      "total_return_pct": 238.95588468232484,
-      "excess_return_pct": -73.67511171919756,
-      "num_trades": 532
+      "final_value": 32419.71196747415,
+      "total_return_pct": 224.19711967474151,
+      "excess_return_pct": -88.4338767267809,
+      "num_trades": 508
     },
     "pytorch": {
-      "final_value": 12988.705152204855,
-      "total_return_pct": 29.88705152204855,
-      "excess_return_pct": -282.7439448794739,
-      "num_trades": 244
+      "final_value": 20935.13648514189,
+      "total_return_pct": 109.35136485141892,
+      "excess_return_pct": -203.2796315501035,
+      "num_trades": 270
     }
   }
 }
