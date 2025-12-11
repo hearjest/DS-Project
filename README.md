@@ -1,8 +1,11 @@
 # DS-Project
-How to run:
-CD into "DS-Project"
-If you're on windows, run "run_pipeline.bat" and "run_tests.bat"
-If you wnant to use the make file, ensure you are also in the DS-Project directory and run "make run" and "make test" if you wish.
+How to run:  
+
+CD into "DS-Project"  
+
+If you're on windows, run "run_pipeline.bat" and "run_tests.bat"  
+
+If you want to use the make file, ensure you are also in the DS-Project directory and run "make run" and "make test" if you wish.  
 
 
 # Regarding my experiences with the project
